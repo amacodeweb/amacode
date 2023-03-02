@@ -1,0 +1,436 @@
+@charset "UTF-8";
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Serif JP", serif;
+  font-size: 1.6rem;
+  line-height: 2.1;
+  color: darkslategray;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 90px;
+  align-items: center;
+  box-shadow: 0 6px 3px -3px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header ul {
+  display: flex;
+}
+
+header h1::before {
+  /* content: url(../../../Pictures/77778.gif); */
+}
+
+header li {
+  display: flex;
+}
+
+header a {
+  font-size: 1.8rem;
+  color: darkslategray;
+  margin: 0 100px 0 50px;
+  letter-spacing: 0.3em;
+  font-weight: 500;
+}
+
+header a:hover {
+  color: orange;
+  transition: all 0.6s ease;
+}
+
+header li {
+  display: inline-block;
+  justify-content: space-between;
+}
+
+section#profile {
+  width: 100%;
+  height: 100vh;
+  background: url(../syu-hp/images/IMG_5548.JPG) no-repeat center center / cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 90px;
+}
+
+#profile::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.1); */
+  content: "";
+}
+
+.myname h2::before {
+  /* display: block;
+  font-size: 2rem;
+  content: "おいかわ あまね"; */
+}
+
+.myname {
+  box-sizing: border-box;
+  background: rgba(253, 253, 253, 0.7);
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  z-index: 2;
+  width: 500px;
+  height: 450px;
+  margin: 0 700px 500px 200px;
+  color: darkslategray;
+  border: 1px solid darkslategray;
+  border-radius: 50px;
+  padding-top: 20px;
+}
+
+.myname:hover {
+  /* opacity: 0; */
+  /* transition: all 0.7s; */
+}
+
+.myname h2 {
+  font-size: 4rem;
+  padding-right: 10px;
+}
+
+.myname ruby {
+  padding-right: 10px;
+}
+
+.myname rb {
+  font-size: 4rem;
+}
+
+.myname rt {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.list table {
+  font-size: 2.5rem;
+  display: inline-block;
+  text-align: left;
+  align-items: center;
+}
+
+.list table th {
+  padding: 10px 50px 0 20px;
+  font-weight: 500;
+}
+
+.list table td {
+  font-weight: 500;
+  padding: 10px 0 0 0;
+}
+
+section#history {
+  /* background-color: coral; */
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+section .photo {
+  background: url(../syu-hp/images/IMG_2351.JPG) no-repeat center center /
+    contain;
+  /* background-color: black; */
+  width: 450px;
+  height: 430px;
+  margin-left: 50px;
+}
+
+section .txet {
+  width: calc(100% - 800px);
+  font-size: 2rem;
+  text-align: left;
+  margin-right: 150px;
+}
+
+.hr1 {
+  border-top: 1px solid darkslategray;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hr2 {
+  border-top: 1px solid darkslategray;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hr3 {
+  border-top: 1px solid darkslategray;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.watapai {
+  border-bottom: 1px solid #333333;
+}
+
+.home {
+  width: 88%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.color {
+  background-color: #b0c4de;
+  box-sizing: border-box;
+  width: 88%;
+  height: 50px;
+  margin: 200px auto 0;
+}
+
+.hobby {
+  box-sizing: border-box;
+  background-color: #b0c4de;
+  margin: 0 auto 0;
+  width: 88%;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 400px 300px 300px;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-areas:
+    "itemA itemB itemC"
+    "itemA itemB itemE"
+    "itemA itemD itemF";
+  justify-content: center;
+  /* opacity: 0; */
+  animation: grid-hobby 0.5s ease 0.3s 1 forwards;
+}
+
+.hobby div:nth-child(1) {
+  background: url(../syu-hp/images/IMG_5502.JPG) no-repeat center center / cover;
+  grid-area: itemA;
+  animation: grid-hobby 0.5s ease 0.5s 1 forwards;
+}
+
+.hobby div:nth-child(2) {
+  background: url(../syu-hp/images/IMG_5198.JPG) no-repeat center center / cover;
+  grid-area: itemB;
+  animation: grid-hobby 0.5s ease 0.7s 1 forwards;
+}
+.hobby div:nth-child(3) {
+  background: url(../syu-hp/images/IMG_9748.JPG) no-repeat center top / contain;
+  grid-area: itemC;
+  animation: grid-hobby 0.5s ease 0.9s 1 forwards;
+}
+.hobby div:nth-child(4) {
+  background: url(../syu-hp/images/IMG_5630.JPG) no-repeat center center / cover;
+  grid-area: itemD;
+  animation: grid-hobby 0.5s ease 1.1s 1 forwards;
+}
+.hobby div:nth-child(5) {
+  background: url(../syu-hp/images/IMG_9675.JPG) no-repeat center center /
+    contain;
+  grid-area: itemE;
+  animation: grid-hobby 0.5s ease 1.3s 1 forwards;
+}
+.hobby div:nth-child(6) {
+  background: url(../syu-hp/images/IMG_5550.JPG) no-repeat center center /
+    contain;
+  grid-area: itemF;
+  animation: grid-hobby 0.5s ease 1.5s 1 forwards;
+}
+
+.itemA:hover {
+  scale: 1.1;
+  transition: all 0.6s;
+}
+
+.itemB:hover {
+  scale: 1.1;
+  transition: all 0.6s;
+}
+
+.itemC:hover {
+  scale: 1.1;
+  transition: all 0.6s;
+}
+
+.itemD:hover {
+  scale: 1.1;
+  transition: all 0.6s;
+}
+
+.itemE:hover {
+  scale: 1.1;
+  transition: all 0.6s;
+}
+
+.itemF:hover {
+  scale: 1.1;
+  transition: all 0.6s;
+}
+
+@keyframes grid-hobby {
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn {
+  background-color: #b0c4de;
+  box-sizing: border-box;
+  width: 88%;
+  height: 100px;
+  margin: 0 auto 100px;
+  position: relative;
+  align-items: center;
+}
+
+.btn a {
+  width: 150px;
+  height: 35px;
+  line-height: 35px;
+  box-sizing: border-box;
+  background-color: #fff;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  left: 1045px;
+  top: 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-style: oblique;
+  box-shadow: 3px 3px 0px 0px #5375bd;
+}
+
+.btn a:hover {
+  background: #668ad8;
+  color: #ffffff;
+  margin-left: 3px;
+  margin-top: 3px;
+  box-shadow: none;
+}
+
+footer {
+  padding: 100px;
+  background-color: #333333;
+  color: #fff;
+  height: 400px;
+}
+
+footer .logo {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 50px;
+}
+
+footer .snsbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sns img {
+  width: 20px;
+  height: 20px;
+}
+
+footer .sms {
+  width: 50%;
+  display: block;
+  box-sizing: border-box;
+  font-size: 3rem;
+  line-height: 2.3;
+  margin-left: 200px;
+}
+
+footer .sns {
+  width: 50%;
+  display: block;
+  box-sizing: border-box;
+  font-size: 3rem;
+  line-height: 2.3;
+  margin-right: 200px;
+}
+
+/* ---------------------------------------趣味ー－－－－－－－－－－－－－－－－－－－ */
+
+section .mountain {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  margin-left: auto;
+  width: 94%;
+  height: 400px;
+  /* background-color: yellow; */
+}
+
+.kv {
+  /* background: url(../../../Pictures/素材/IMG_5503.JPG) no-repeat center center / */
+  /* contain; */
+  box-sizing: border-box;
+  background-color: #668ad8;
+  width: 200px;
+  height: auto;
+}
+
+.kv img {
+  width: 100%;
+}
+
+.discription {
+  box-sizing: border-box;
+  width: 50%;
+  height: auto;
+  background-color: tomato;
+  text-align: left;
+  margin-right: auto;
+}
